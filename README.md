@@ -23,7 +23,7 @@ For this project, I am analyzing an A/B test run by an e-commerce website. The g
 - [x] Using logistic regression model to predict binary outcomes
 - [x] Using Higher order terms and interactions
 
-## Result and Charts from Analysis 
+## Result and Charts from Analysis  
 
 ***For comprehensive analysis, please see the [jupiter notebook report](Analyze_AB_test.ipynb) where one can follow complete steps of A/B testing, accompanied with charts and explanation.***
  
@@ -74,6 +74,6 @@ Sometimes we would like to fit models where the response is not lineary related 
 Adding higher terms did not improve the model. Based on p-value for CA_abpage and UK_abpage is 0.383 and 0.238, respectively indicating that interactions are not significant and we would consider removing them from the model. 
 However it is essential to be aware of interactions since they can improve our models or even hurt if we do not add them and show significance. 
 
-## Conclusions
+## Conclusion
 
 p-value of 0.9009 means that nearly all statistics came from a null (almost all ~ 90%); therefore, we fail to reject null hypothesis and the company should stick with the old page. Z-score indicates similar: Critical value for the 95% confidence interval (or alpha level of 0.05 or 5%) is 1.64. Our z-test is -3.11; therefore z-score value falls out of this critical value and we fail to reject the null hypothesis. Adding additional features did not improve our model, since none of the features indicated significance. However it is essential to check for higher order interactions in order not to miss anything. The bottom line is we fail to reject null hypotheses and the company should stick with the old page.
